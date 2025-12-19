@@ -5,45 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jens F. Tillmann</title>
   <meta name="description" content="Neuroscientist at DZNE Bonn. Computational behavioral neuroscience, ML-based behavioral analysis, closed-loop experimental systems." />
-  <meta property="og:type" content="profile" />
+  <link rel="canonical" href="https://jensblack.github.io/" />
   <meta property="og:title" content="Jens F. Tillmann" />
   <meta property="og:description" content="Neuroscientist at DZNE Bonn. Computational behavioral neuroscience, ML-based behavioral analysis, closed-loop experimental systems." />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jensblack.github.io/" />
-  <meta property="og:image" content="https://jensblack.github.io/assets/jens_tillmann_web.jpg" />
-  <meta property="og:image:alt" content="Portrait of Jens F. Tillmann" />
-
+  <meta property="og:image" content="assets/jens_tillmann_web.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Jens F. Tillmann" />
   <meta name="twitter:description" content="Neuroscientist at DZNE Bonn. Computational behavioral neuroscience, ML-based behavioral analysis, closed-loop experimental systems." />
-  <meta name="twitter:image" content="https://jensblack.github.io/assets/jens_tillmann_web.jpg" />
-  <meta name="twitter:image:alt" content="Portrait of Jens F. Tillmann" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jens F. Tillmann",
-    "jobTitle": "Postdoctoral Researcher",
-    "affiliation": "Deutsches Zentrum für Neurodegenerative Diseases (DZNE)",
-    "url": "https://jensblack.github.io/",
-    "image": {
-      "@type": "ImageObject",
-      "contentUrl": "https://jensblack.github.io/assets/jens_tillmann_web.jpg",
-      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-    },
-    "sameAs": [
-      "https://github.com/JensBlack",
-      "https://orcid.org/0000-0002-3030-1571",
-      "https://scholar.google.com/citations?user=0qwL2LQAAAAJ"
-    ]
-  }
-  </script>
+  <meta name="twitter:image" content="assets/jens_tillmann_web.jpg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="wrap">
     <header class="hero" id="top">
       <figure class="portrait">
-        <img src="assets/jens_tillmann_web.jpg" alt="Portrait of Jens F. Tillmann" width="562" height="800" />
+        <img src="assets/jens_tillmann_web.jpg" alt="Portrait of Jens F. Tillmann" />
       </figure>
 
       <div class="hero-text">
@@ -173,6 +151,12 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
+    const portrait = document.querySelector(".portrait img");
+    if (portrait) {
+      portrait.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+      });
+    }
   </script>
 </body>
 </html>

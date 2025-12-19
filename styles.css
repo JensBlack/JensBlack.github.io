@@ -50,7 +50,6 @@ body{
   height: 100vh;
   object-fit: cover;
   object-position: center 20%;
-  border-radius: 0 28px 28px 0;
   box-shadow:
     0 20px 44px rgba(31,35,40,.18),
     inset 0 0 0 1px rgba(31,35,40,.08);

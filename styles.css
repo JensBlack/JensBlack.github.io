@@ -17,6 +17,7 @@ body{
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: var(--fg);
   line-height: 1.6;
+  margin: 0;
   padding-left: var(--portrait-width);
   background:
     radial-gradient(900px 600px at 15% 10%, rgba(216, 232, 225, 0.80), transparent 60%),
@@ -27,9 +28,9 @@ body{
 
 
 .wrap{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 56px 28px 80px;
+  width: 100%;
+  margin: 0;
+  padding: 56px 48px 80px;
 }
 
 .hero{

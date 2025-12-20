@@ -231,12 +231,13 @@ h1{
   content: "";
   position: absolute;
   left: calc(16px + (var(--cv-date-col) / 2) - 5px);
-  top: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(47,111,126,.12);
+  background: rgba(31,35,40,.26);
+  box-shadow: 0 0 0 4px rgba(31,35,40,.06);
   pointer-events: none;
 }
 

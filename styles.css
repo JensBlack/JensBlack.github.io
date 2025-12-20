@@ -8,7 +8,8 @@
   --border:rgba(31,35,40,.12);
   --accent:#2f6f7e;
   --accent2:#b86b3c;
-  --portrait-width: clamp(280px, 34vw, 520px);
+  /* Golden ratio split: image ≈ 38.2% and text ≈ 61.8% */
+  --portrait-width: clamp(280px, 38.2vw, 620px);
 }
 
 *{box-sizing:border-box}

@@ -218,7 +218,7 @@ h1{
 .cv-row::before{
   content: "";
   position: absolute;
-  left: calc(16px + (var(--cv-date-col) / 2));
+  left: calc(16px + var(--cv-date-col) + 8px);
   top: 14px;
   bottom: 14px;
   width: 1px;
@@ -230,7 +230,7 @@ h1{
 .cv-row::after{
   content: "";
   position: absolute;
-  left: calc(16px + (var(--cv-date-col) / 2) - 5px);
+  left: calc(16px + var(--cv-date-col) + 3px);
   top: 50%;
   transform: translateY(-50%);
   width: 10px;

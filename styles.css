@@ -81,6 +81,13 @@ body{
   justify-content: center;
 }
 
+.shield-row--links{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100%;
+  padding-bottom: 2px;
+}
+
 .shield{
   display: inline-flex;
   align-items: center;

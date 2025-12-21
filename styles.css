@@ -117,6 +117,21 @@ body{
   display: block;
 }
 
+/* Tighter alignment for text+icon pills */
+.shield.pill{
+  line-height: 1.2;
+  align-items: center;
+}
+
+.shield.pill .icon{
+  width: 18px;
+  height: 18px;
+}
+
+.shield.pill .label{
+  line-height: 1.2;
+}
+
 .shield.icon-only{
   width: 42px;
   height: 42px;

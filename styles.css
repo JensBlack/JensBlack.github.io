@@ -280,6 +280,53 @@ h1{
   padding-left: 18px;
 }
 .list li{margin: 8px 0}
+
+/* Logo-enhanced lists (scoped so other lists keep bullets) */
+.list--logos{
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--logos li{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.repo-logo{
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.7);
+  object-fit: contain;
+}
+
+.repo-text{
+  min-width: 0;
+}
+
+.list--logos .repo-badges{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.list--logos .repo-badge{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.list--logos .repo-badge img{
+  height: 20px;
+  width: auto;
+}
 a{color: var(--accent)}
 a:hover{color: var(--accent2)}
 

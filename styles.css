@@ -113,6 +113,10 @@ body{
   color: inherit;
 }
 
+.shield .icon svg{
+  display: block;
+}
+
 .shield.icon-only{
   width: 42px;
   height: 42px;
@@ -281,51 +285,46 @@ h1{
 }
 .list li{margin: 8px 0}
 
-/* Logo-enhanced lists (scoped so other lists keep bullets) */
-.list--logos{
+/* Repo list where the logo acts as the "dot" */
+.list--repo{
   list-style: none;
   padding-left: 0;
 }
 
-.list--logos li{
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+.list--repo .repo-item{
+  position: relative;
+  padding-left: 38px;
   margin: 10px 0;
 }
 
-.repo-logo{
-  flex: 0 0 auto;
-  width: 28px;
-  height: 28px;
-  margin-top: 2px;
-  border-radius: 8px;
+.list--repo .repo-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .15em;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255,255,255,.7);
-  object-fit: contain;
+  background-image: var(--repo-logo);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.repo-text{
-  min-width: 0;
-}
-
-.list--logos .repo-badges{
+.list--repo .repo-stars{
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   margin-left: 10px;
+  text-decoration: none;
   vertical-align: middle;
 }
 
-.list--logos .repo-badge{
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.list--logos .repo-badge img{
+.list--repo .repo-stars img{
   height: 20px;
   width: auto;
+  display: block;
 }
 a{color: var(--accent)}
 a:hover{color: var(--accent2)}
